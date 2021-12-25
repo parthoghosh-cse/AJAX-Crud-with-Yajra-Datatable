@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::resource('staff','App\Http\Controllers\StaffController');
+
+Route::get('staff-delete/{id}','App\Http\Controllers\StaffController@staffDel');
+Route::post('staff-update','App\Http\Controllers\StaffController@staffUpdate');
